@@ -2,7 +2,7 @@
 FROM alpine:3.13.1
 
 LABEL Author="Fatorin"
-LABEL version="1.2"
+LABEL version="1.3"
 LABEL description="Support for Warcraft III 1.28f."
 
 # RUN echo -e "http://dl-cdn.alpinelinux.org/alpine/v3.13/main" > /etc/apk/repositories
@@ -18,4 +18,4 @@ ADD ghostpp.tar /app
 ADD include.tar /usr/local
 ADD lib.tar /usr/local
 
-CMD [ "./ghost++","/config/ghost.cfg" ]
+CMD [ "./ghost++","./config/ghost.cfg" ]

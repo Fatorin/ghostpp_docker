@@ -10,6 +10,7 @@ services:
         volumes: 
             - ./config:/app/config
             - ./maps:/app/maps
+        command: ./ghost++ "./config/ghost.cfg"
         deploy:
             resources:
                 limits:
