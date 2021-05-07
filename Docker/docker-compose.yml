@@ -7,10 +7,9 @@ services:
         ports: 
             - "6113:6113"
             - "6114:6114"
-        working_dir: /app
         volumes: 
-            - ./config:/config
-            - ./maps:/maps
+            - ./config:app/config
+            - ./maps:app/maps
         deploy:
             resources:
                 limits:
