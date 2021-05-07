@@ -18,4 +18,4 @@ ADD ghostpp.tar /app
 ADD include.tar /usr/local
 ADD lib.tar /usr/local
 
-CMD [ "ghost++" ]
+CMD [ "./ghost++","/config/ghost.cfg" ]
