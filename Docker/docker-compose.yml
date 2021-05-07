@@ -8,8 +8,8 @@ services:
             - "6113:6113"
             - "6114:6114"
         volumes: 
-            - ./config:app/config
-            - ./maps:app/maps
+            - ./config:/app/config
+            - ./maps:/app/maps
         deploy:
             resources:
                 limits:
