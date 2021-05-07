@@ -9,7 +9,7 @@ services:
             - "6114:6114"
         volumes: 
             - ./config:/app/config
-            - ./maps:/app/maps
+            - ./maps:/app/maps:z
         command: ./ghost++ "./config/ghost.cfg"
         deploy:
             resources:
