@@ -8,6 +8,4 @@ Use guide:
 
 3.Put your map in "maps" folder.
 
-4.Modify under line cmd to your real open port in ghost.cfg.
-
-docker run -it -p 6113-6114:6113-6114 -v /config:/config --name ghostpp fatorin/ghostpp:1.2
+4.Follow docker-compose.yml to setting
