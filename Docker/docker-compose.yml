@@ -1,0 +1,12 @@
+version: "3.8"
+
+services: 
+    ghostpp:
+        container_name: bot1
+        image: fatorin/ghostpp:1.2
+        ports: 
+            - "6113:6113"
+            - "6114:6114"
+        volumes: 
+            - ./config:/config
+            - ./maps:/maps
